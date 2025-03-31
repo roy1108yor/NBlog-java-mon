@@ -47,6 +47,11 @@ yarn-error.log*
 .env.local
 .env.*.local
 
+### Clacky Environment ###
+.1024*
+!.1024
+.breakpoints
+
 .DS_Store
 /blog-cms-tmp
 package-lock.json
