@@ -32,10 +32,6 @@ build/
 ### VS Code ###
 .vscode/
 
-### Clacky-related configuration ###
-.1024*
-!.1024
-.breakpoints
 
 ### Java/Spring Boot ###
 *.class
