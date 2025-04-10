@@ -52,7 +52,3 @@ yarn-error.log*
 /blog-cms-tmp
 package-lock.json
 
-### Clacky Config ###
-.1024*
-!.1024
-.breakpoints
