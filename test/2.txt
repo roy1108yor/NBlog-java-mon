@@ -1,0 +1,4 @@
+This is an example file for the NBlog project.
+Date: 2023-09-22
+
+This test folder is used for storing test files and examples related to the NBlog project development. It can contain temporary files, test data, and other resources needed during the development and testing process of the blog system.
