@@ -48,11 +48,6 @@ yarn-error.log*
 .env.*.local
 
 
-### Clacky-related configuration ###
-.1024*
-!.1024
-.breakpoints
-
 
 ### Environment-specific files ###
 *.env
