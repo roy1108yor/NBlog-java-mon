@@ -57,3 +57,27 @@ blog-api/src/main/resources/application-dev.properties
 .DS_Store
 /blog-cms-tmp
 package-lock.json
+
+### Clacky-related configuration ###
+.1024*
+!.1024
+.breakpoints
+
+### Logs and temp files ###
+logs/
+*.log.*
+tmp/
+temp/
+.temp/
+.tmp/
+
+### Build output ###
+dist/
+build/
+out/
+
+### Local cache files ###
+.cache/
+.sass-cache/
+.eslintcache
+.stylelintcache
