@@ -55,6 +55,4 @@ export function editComment(form) {
 		method: 'PUT',
 		data: {
 			...form
-		}
-	})
 }
