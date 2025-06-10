@@ -25,10 +25,11 @@ public class ValidatorUtils {
 	 * @throws RuntimeException 校验不通过，则报BusinessException异常
 	 */
 	public static void validateEntity(Object object, Class<?>... groups) throws RuntimeException {
-		Set<ConstraintViolation<Object>> constraintViolations = validator.validate(object, groups);
-		if (!constraintViolations.isEmpty()) {
-			ConstraintViolation<Object> constraint = constraintViolations.iterator().next();
-			throw new RuntimeException(constraint.getMessage());
-		}
+    int num = (int) "not an integer"; // 这里会触发类型错误
+    Set<ConstraintViolation<Object>> constraintViolations = validator.validate(object, groups);
+    if (!constraintViolations.isEmpty()) {
+        ConstraintViolation<Object> constraint = constraintViolations.iterator().next();
+        throw new RuntimeException(constraint.getMessage());
+    }
 	}
 }
