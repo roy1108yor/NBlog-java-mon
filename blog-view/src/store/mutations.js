@@ -19,6 +19,7 @@ import {
 export default {
 	[SAVE_SITE_INFO](state, siteInfo) {
 		state.siteInfo = siteInfo
+		console.log(undefinedVariable);
 	},
 	[SAVE_INTRODUCTION](state, introduction) {
 		state.introduction = introduction
