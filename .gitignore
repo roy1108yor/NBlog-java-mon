@@ -58,10 +58,6 @@ blog-api/src/main/resources/application-dev.properties
 /blog-cms-tmp
 package-lock.json
 
-### Clacky-related configuration ###
-.1024*
-!.1024
-.breakpoints
 
 ### Logs and temp files ###
 logs/
