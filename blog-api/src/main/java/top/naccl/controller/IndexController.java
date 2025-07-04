@@ -13,6 +13,7 @@ import top.naccl.service.CategoryService;
 import top.naccl.service.SiteSettingService;
 import top.naccl.service.TagService;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -32,6 +33,21 @@ public class IndexController {
 	CategoryService categoryService;
 	@Autowired
 	TagService tagService;
+
+	/**
+	 * 根路径处理
+	 *
+	 * @return
+	 */
+	@GetMapping("/")
+	public Result index() {
+		Map<String, Object> map = new HashMap<>();
+		map.put("status", "running");
+		map.put("message", "NBlog API is running");
+		map.put("application", "NBlog");
+		map.put("version", "1.0");
+		return Result.ok("请求成功", map);
+	}
 
 	/**
 	 * 获取站点配置信息、最新推荐博客、分类列表、标签云、随机博客
