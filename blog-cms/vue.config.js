@@ -13,7 +13,7 @@ const name = defaultSettings.title // page title
 // For example, Mac: sudo npm run
 // You can change the port by the following methods:
 // port = 9528 npm run dev OR npm run dev --port = 9528
-const port = process.env.port || process.env.npm_config_port || 8079 // dev port
+const port = process.env.port || process.env.npm_config_port || 8080 // dev port
 
 // All configuration item explanations can be find in https://cli.vuejs.org/config/
 module.exports = {
@@ -31,9 +31,12 @@ module.exports = {
 	productionSourceMap: false,
 	
 	devServer: {
-		disableHostCheck: true,
+		host: '0.0.0.0',
 		port: port,
+		allowedHosts: ['.clackypaas.com'],
+		disableHostCheck: true,
 		open: true,
+		hot: true,
 		overlay: {
 			warnings: false,
 			errors: true
